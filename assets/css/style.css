@@ -1,0 +1,101 @@
+/* Estilos generales */
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    background-color: #efe2b8;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3rem;
+}
+
+.seccion-clara {
+    color: #f3f2f8;
+    background-color: #7960b3;
+}
+
+.seccion-oscura {
+    color: #f3f2f8;
+    background-color: #7d0e98;
+}
+
+/* Header */
+
+header .brand {
+    background-color: #7960b3;
+}
+
+.navbar {
+    padding: 0.5rem;
+    font-weight: 600;
+    color: #efe2b8;
+    background-color: #7960b3;
+}
+
+.navbar-brand img {
+    width: 12.5rem;
+    border-radius: 1rem;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: end;
+}
+
+.nav-item .nav-link {
+    color: #efe2b8;
+}
+
+.nav-link:hover {
+    color: #7d0e98;
+}
+
+/* Links gratuitos */
+
+.link-gratuito a {
+    color: #7d0e98;
+}
+
+/* Contacto */
+
+.contacto {
+    padding: 40px;
+}
+
+.iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid #7960b3;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i {
+    color: #7960b3;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+    background-color: #efe2b8;
+    border: 2px solid #7d0e98;
+}
+
+.iconos-redes-sociales a:hover i {
+    color: #7d0e98
+}
+
+.derechos-de-autor {
+    font-size: 1rem;
+    color: #7d0e98;
+    padding: 20px;
+}
