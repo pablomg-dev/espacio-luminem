@@ -59,7 +59,15 @@ header .brand {
 /* Servicios */
 
 .servicios p {
-    color: #FABC3F;
+    color: #f3f2f8;
+}
+
+.servicios p a:visited {
+    color: #f3f2f8;
+}
+
+.servicios p a:hover {
+    color: #efe2b8;
 }
 
 /* Links gratuitos */
