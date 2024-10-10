@@ -3,7 +3,7 @@
 body {
     font-family: "Cormorant Garamond", serif;
     background-image: url(/assets/imgs/fondo.png);
-    background-size: contain;
+    background-attachment: fixed;
 }
 
 section {
