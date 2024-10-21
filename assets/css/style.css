@@ -58,7 +58,7 @@ header .brand {
 
 /* Servicios */
 
-.servicios p {
+.servicios p a {
     color: #f3f2f8;
 }
 
