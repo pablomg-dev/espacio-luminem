@@ -70,6 +70,10 @@ header .brand {
     color: #efe2b8;
 }
 
+.texto-justificado {
+    text-align: justify;
+}
+
 /* Links gratuitos */
 
 .link-gratuito a {
