@@ -124,3 +124,7 @@ header .brand {
     color: #7d0e98;
     text-decoration: none;
 }
+
+#pablomgdev:hover {
+    color: white;
+}
