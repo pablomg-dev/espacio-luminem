@@ -34,43 +34,43 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="fondo">
-    <!-- Header -->
-    <header>
+
+    <button onclick="topFunction()" id="btn-ir-arriba" title="Ir arriba" style="display: none;"><i class="bi bi-arrow-up-circle-fill"></i></button>
+
+    <header class="text-bg-light d-none d-md-block">
 
         <nav class="navbar navbar-expand-md">
 
-            <div class="container-fluid">
+            <div class="container-fluid px-5">
 
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top">
+                    <img src="./assets/imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top"
+                        style="width: 8rem; border-radius: 1rem;">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar-toggler">
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-toggler">
 
                     <ul class="navbar-nav d-flex justify-content-center align-items-center text-center">
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="./assets/html/sobremi.html">Sobre mi</a>
+                            <a class="nav-link fw-bolder fs-5" href="./assets/html/sobremi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="#servicios">Servicios</a>
+                            <a class="nav-link fw-bolder fs-5" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="#contenido-gratuito">Contenido gratuito</a>
+                            <a class="nav-link fw-bolder fs-5" href="#contenido-gratuito">Contenido gratuito</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="./assets/html/talleres.html">Talleres y
+                            <a class="nav-link fw-bolder fs-5" href="./assets/html/talleres.html">Talleres y
                                 cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="#contacto">Contacto</a>
+                            <a class="nav-link fw-bolder fs-5" href="#contacto">Contacto</a>
                         </li>
                     </ul>
 
@@ -82,8 +82,17 @@
 
     </header>
 
-    <!-- Hero -->
-    <section class="hero seccion-oscura">
+    <header class="text-bg-light py-2 d-md-none">
+        <div class="container-fluid text-center">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top"
+                    style="width: 8rem; border-radius: 1rem;">
+            </a>
+        </div>
+    </header>
+
+    <section class="mb-4 d-flex flex-column align-items-center justify-content-center mx-auto" data-aos="fade-up"
+        data-aos-duration="1000">
 
         <div>
             <img class="img-fluid" src="./assets/imgs/img3.png" alt="espacio luminem fernando">
@@ -91,130 +100,213 @@
 
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios" class="servicios seccion-oscura">
+    <section id="servicios"
+        class="servicios seccion-clara text-light rounded-4 my-4 py-5 d-flex flex-column align-items-center justify-content-center w-75 mx-auto ancla-seccion"
+        data-aos="fade-up" data-aos-duration="1000">
 
-        <h1 class="fs-1 fw-bold m-0 py-4">Servicios</h1>
+        <h1 class="fs-1 fw-bold mb-4 text-center">Servicios</h1>
 
         <div class="container">
-
-            <div class="row align-items-center">
-                <div class="col">
-                    <p class="fs-4 text-center">
-                        <a href="./assets/html/servicios.html">ASTROLÓGICOS</a>
-                        <br>
-                        -Carta Natal
-                        <br>
-                        -Revolución Solar
-                        <br>
-                        -Sínastria
-                        <br>
-                        -Electiva
-                        <br>
-                        -Dracónica
-                        <br>
-                        -Astrogenealógica
-                        <br>
-                        -Empresarial
-                        <br>
-                        -Lectura de Lilith
-                        <br>
-                        -Lectura de Quirón
-                        <br>
-                        -Lectura de Carta Full
-                    </p>
-
-
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card text-center text-light card-bg">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-4">ASTROLÓGICOS</h5>
+                            <p class="card-text">
+                                <a href="./assets/html/servicios.html#carta-natal" class="text-decoration-none"
+                                    style="color: inherit;">-Carta Natal: El Mapa de tu Alma</a><br>
+                                <a href="./assets/html/servicios.html#revolucion-solar" class="text-decoration-none"
+                                    style="color: inherit;">-Revolución Solar: Tu Nuevo Año Astrológico Personal</a><br>
+                                <a href="./assets/html/servicios.html#sinastria" class="text-decoration-none"
+                                    style="color: inherit;">-Sinastría de Pareja: La Danza de Dos Almas</a><br>
+                                <a href="./assets/html/servicios.html#astrologia-electiva" class="text-decoration-none"
+                                    style="color: inherit;">-Astrología Electiva: Elegí el Momento Perfecto</a><br>
+                                <a href="./assets/html/servicios.html#carta-draconica" class="text-decoration-none"
+                                    style="color: inherit;">-Carta Dracónica: La Voz de tu Alma Profunda</a><br>
+                                <a href="./assets/html/servicios.html#carta-astrogenealogica"
+                                    class="text-decoration-none" style="color: inherit;">-Carta Astrogenealógica:
+                                    Desentrañando tus Raíces</a><br>
+                                <a href="./assets/html/servicios.html#astrologia-empresarial"
+                                    class="text-decoration-none" style="color: inherit;">-Astrología Empresarial: El
+                                    Éxito de tu Negocio en las Estrellas</a><br>
+                                <a href="./assets/html/servicios.html#constelaciones-familiares"
+                                    class="text-decoration-none" style="color: inherit;">-Constelaciones Familiares
+                                    Individuales: Sanando el Sistema</a><br>
+                                <a href="./assets/html/servicios.html#registros-akashicos" class="text-decoration-none"
+                                    style="color: inherit;">-Registros Akáshicos: La Sabiduría de tu Alma</a><br>
+                                <a href="./assets/html/servicios.html#terapia-pendulo" class="text-decoration-none"
+                                    style="color: inherit;">-Terapia con Péndulo: Limpieza y Regeneración
+                                    Energética</a><br>
+                                <a href="./assets/html/servicios.html#lectura-lilith" class="text-decoration-none"
+                                    style="color: inherit;">-Lectura de Lilith: Abrazando tu Poder Oculto</a><br>
+                                <a href="./assets/html/servicios.html#lectura-quiron" class="text-decoration-none"
+                                    style="color: inherit;">-Lectura de Quirón: Sanando tu Herida más Profunda</a><br>
+                                <a href="./assets/html/servicios.html#lectura-natal-full" class="text-decoration-none"
+                                    style="color: inherit;">-Lectura de Carta Natal Full: Profundizando en tu
+                                    Ser</a><br>
+                                <a href="./assets/html/servicios.html#bioneuroreprogramacion"
+                                    class="text-decoration-none" style="color: inherit;">-Bioneuroreprogramación
+                                    (Biodescodificación): Liberá tus Emociones, Saná tu Vida.</a><br>
+                                <a href="./assets/html/servicios.html#lectura-carta-natal-premium"
+                                    class="text-decoration-none" style="color: inherit;">-Lectura de Carta Natal
+                                    Premium: El Viaje Más Profundo Hacia Vos Mismo.</a><br>
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col">
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card text-center text-light card-bg">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-4">OTROS</h5>
+                            <p class="card-text">-Biodescodificación<br>-Constelaciones familiares individuales<br>-Registros Akáshicos<br>-Terapia con
+                                péndulo</p>
+                        </div>
+                    </div>
+                </div>
 
-                    <p class="fs-4 text-center">
-                        <span class="text-decoration-underline">OTROS</span>
-                        <br>
-                        -Constelaciones familiares individuales
-                        <br>
-                        -Terapia con péndulo
-                        <br>
-                        -Registros Akáshicos
-                    </p>
-
-                    <br>
-
-                    <p class="fs-4 text-center">
-                        <a href="./assets/html/talleres.html">TALLERES Y CURSOS</a>
-                        <br>
-                        -Tarot Rider White
-                        <br>
-                        -Registros Akáshicos.
-                        <br>
-                        -Péndulo hebreo.
-                        <br>
-                        -Primer nivel de Astrología.
-                    </p>
+                <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card text-center text-light card-bg">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title fs-4">TALLERES Y
+                                CURSOS</h5>
+                            <p class="card-text">
+                                <a href="./assets/html/talleres.html#tarot-rider" class="text-decoration-none"
+                                    style="color: inherit;">-Tarot Rider White</a><br>
+                                <a href="./assets/html/talleres.html#registros-akashicos-taller"
+                                    class="text-decoration-none" style="color: inherit;">-Registros Akáshicos.</a><br>
+                                <a href="./assets/html/talleres.html#pendulo-hebreo" class="text-decoration-none"
+                                    style="color: inherit;">-Péndulo
+                                    hebreo.</a><br>
+                                <a href="./assets/html/talleres.html#formacion-astrologia" class="text-decoration-none"
+                                    style="color: inherit;">-Primer nivel de Astrología.</a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
 
-    <!-- Contenido gratuito -->
-    <section id="contenido-gratuito" class="contenido-gratuito seccion-clara py-4">
+    <section id="contenido-gratuito"
+        class="contenido-gratuito seccion-clara text-light rounded-4 my-4 py-4 d-flex flex-column align-items-center justify-content-center w-75 mx-auto ancla-seccion"
+        data-aos="fade-up" data-aos-duration="1000">
 
-        <h1 class="fs-1 fw-bold m-0">Contenido gratuito</h1>
+        <h1 class="fs-1 fw-bold m-0 mb-4">Contenido gratuito</h1>
 
-        <p class="fs-4 text-center px-3 link-gratuito">
-            <br>
-            TikTok:
-            <br>
-            <a href="https://www.tiktok.com/@espacioluminem" target="_blank"
-                rel="noopener noreferrer">www.tiktok.com/@esp..</a>
-            <br>
-            <br>
-            YouTube:
-            <br>
-            <a href="https://www.youtube.com/@espacioluminem" target="_blank"
-                rel="noopener noreferrer">www.youtube.com/@esp..</a>
-            <br>
-            <br>
-            Spotify:
-            <br>
-            <a href="https://podcasters.spotify.com/pod/show/espacioluminem19" target="_blank"
-                rel="noopener noreferrer">www.podcasters.spotify.com..</a>
-        </p>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="card h-100 text-center text-light card-bg">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title fs-3"><a href="https://www.tiktok.com/@espacioluminem" target="_blank"
+                                    rel="noopener noreferrer" class="stretched-link text-decoration-none"
+                                    style="color: inherit;">TikTok</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="card h-100 text-center text-light card-bg">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title fs-3"><a href="https://www.youtube.com/@espacioluminem"
+                                    target="_blank" rel="noopener noreferrer"
+                                    class="stretched-link text-decoration-none" style="color: inherit;">YouTube</a></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="card h-100 text-center text-light card-bg">
+                        <div class="card-body d-flex flex-column justify-content-center">
+                            <h5 class="card-title fs-3"><a
+                                    href="https://podcasters.spotify.com/pod/show/espacioluminem19" target="_blank"
+                                    rel="noopener noreferrer" class="stretched-link text-decoration-none"
+                                    style="color: inherit;">Spotify</a></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="contacto seccion-oscura">
+    <section id="contacto"
+        class="contacto seccion-clara text-light rounded-4 my-4 py-4 d-flex flex-column align-items-center justify-content-center w-75 mx-auto"
+        data-aos="fade-up" data-aos-duration="1000">
 
-        <h2 class="fs-1 fw-bold text-center">Contacto</h2>
+        <h2 class="fs-1 fw-bold text-center mb-4">Contacto</h2>
 
-        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <div class="card card-bg text-light" style="width: 18rem;">
+            <div class="card-body">
+                <div
+                    class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center text-light">
 
-            <a href="mailto:espacioluminem@espacioluminem.com">
-                <i class="bi bi-envelope"></i>
-            </a>
+                    <a href="mailto:espacioluminem@espacioluminem.com">
+                        <i class="bi bi-envelope"></i>
+                    </a>
 
-            <a href="https://www.instagram.com/espacioluminem/" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-instagram"></i>
-            </a>
+                    <a href="https://www.instagram.com/espacioluminem/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
 
-            <a href="https://api.whatsapp.com/send?phone=5493541591943" target="_blank" rel="noopener noreferrer">
-                <i class="bi bi-whatsapp"></i>
-            </a>
+                    <a href="https://api.whatsapp.com/send?phone=5493541591943" target="_blank"
+                        rel="noopener noreferrer">
+                        <i class="bi bi-whatsapp"></i>
+                    </a>
 
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <Footer class="seccion-clara align-items-center justify-content-center">
-        <div class="derechos-de-autor text-center fw-medium">Espacio Luminem (2024) &#169; | Desarrollado por <a
+    <nav class="navbar fixed-bottom navbar-light bg-light d-md-none">
+        <div class="container-fluid d-flex justify-content-around">
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="#">
+                <i class="bi bi-house-door-fill fs-4"></i>
+                <small>Inicio</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="./assets/html/sobremi.html">
+                <i class="bi bi-person-circle fs-4"></i>
+                <small>Sobre mí</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="#servicios">
+                <i class="bi bi-gem fs-4"></i>
+                <small>Servicios</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="#contenido-gratuito">
+                <i class="bi bi-book fs-4"></i>
+                <small>Contenido</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0"
+                href="./assets/html/talleres.html">
+                <i class="bi bi-mortarboard-fill fs-4"></i>
+                <small>Talleres</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="#contacto">
+                <i class="bi bi-telephone-fill fs-4"></i>
+                <small>Contacto</small>
+            </a>
+        </div>
+    </nav>
+
+
+    <Footer class="text-bg-light align-items-center justify-content-center pt-3 pb-2 d-none d-md-flex">
+        <div class="derechos-de-autor text-center fw-medium">Espacio Luminem (2024) © | Desarrollado por <a
                 href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer" id="pablomgdev">Pablo
                 MG.</a> </div>
     </Footer>
 
+    <Footer class="align-items-center justify-content-center pt-3 pb-2 d-md-none">
+        <div class="derechos-de-autor text-center fw-medium mt-5">Espacio Luminem (2024) © | Desarrollado por <a
+                href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer" id="pablomgdev">Pablo
+                MG.</a> </div>
+    </Footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/aos-init.js"></script>
+    <script src="./assets/js/scroll-to-top.js"></script>
 </body>
 
 </html>

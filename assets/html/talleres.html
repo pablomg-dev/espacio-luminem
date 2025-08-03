@@ -21,43 +21,44 @@
         rel="stylesheet">
     <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body class="fondo">
+
+    <button onclick="topFunction()" id="btn-ir-arriba" title="Ir arriba" style="display: none;"><i class="bi bi-arrow-up-circle-fill"></i></button>
+
     <!-- Header -->
-    <header>
+    <header class="text-bg-light d-none d-md-block">
 
         <nav class="navbar navbar-expand-md">
 
-            <div class="container-fluid">
+            <div class="container-fluid px-5">
 
                 <a class="navbar-brand" href="../../index.html">
-                    <img src="../imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top">
+                    <img src="../imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top"
+                        style="width: 8rem; border-radius: 1rem;">
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbar-toggler">
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-toggler">
 
                     <ul class="navbar-nav d-flex justify-content-center align-items-center text-center">
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="./sobremi.html">Sobre mi</a>
+                            <a class="nav-link fw-bolder fs-5" href="./sobremi.html">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="../../index.html#servicios">Servicios</a>
+                            <a class="nav-link fw-bolder fs-5" href="../../index.html#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="../../index.html#contenido-gratuito">Contenido gratuito</a>
+                            <a class="nav-link fw-bolder fs-5" href="../../index.html#contenido-gratuito">Contenido gratuito</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="#">Talleres y
+                            <a class="nav-link fw-bolder fs-5" href="./talleres.html">Talleres y
                                 cursos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="../../index.html#contacto">Contacto</a>
+                            <a class="nav-link fw-bolder fs-5" href="../../index.html#contacto">Contacto</a>
                         </li>
                     </ul>
 
@@ -69,199 +70,270 @@
 
     </header>
 
-    <!-- Content -->
-    <section class="seccion-oscura text-center">
+    <header class="text-bg-light py-2 d-md-none">
+        <div class="container-fluid text-center">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top"
+                    style="width: 8rem; border-radius: 1rem;">
+            </a>
+        </div>
+    </header>
 
-        <h2 class="pt-4 pb-3 text-decoration-underline">
-            CURSO INTENSIVO DE TAROT RIDER WHITE
-        </h2>
+    <!-- Main -->
+    <section class="text-center text-light w-75 mx-auto mt-3">
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Con una duración de dos meses, en este curso veremos de manera intensiva todo lo necesario (teoría y práctica) para aprender a leer el Tarot Rider Waite. Teoría y práctica.
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="tarot-rider">
+            <h2 class="text-decoration-underline">
+                CURSO INTENSIVO DE TAROT RIDER WHITE
+            </h2>
 
-        <h2 class="pt-4 pb-3 text-decoration-underline">
-            TALLER DE REGISTROS AKASHICOS:
-        </h2>
+            <p class="fs-4 p-3 lh-sm texto-justificado">
+                Con una duración de dos meses, en este curso veremos de manera intensiva todo lo necesario (teoría y práctica) para aprender a leer el Tarot Rider Waite. Teoría y práctica.
+            </p>
+        </div>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Puede ser de forma grupal online (cada vez que se anuncie en las redes sociales) ó de forma individual, así
-            que, si te interesa hacerlo, nos ponemos de acuerdo en un día y una hora que ambos podamos.
-            <br>
-            <br>
-            El taller dura aproximadamente dos horas en las cuales se enseña toda la teoría y la técnica necesaria para
-            abrir los registros (tanto propios como de terceros), además de las meditaciones y oraciones necesarias.
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="registros-akashicos-taller">
+            <h2 class="text-decoration-underline">
+                TALLER DE REGISTROS AKASHICOS:
+            </h2>
 
-        <h2 class="pt-2 text-decoration-underline">
-            Los temas que vemos, son los siguientes:
-        </h2>
+            <p class="fs-4 p-3 lh-sm texto-justificado">
+                Puede ser de forma grupal online (cada vez que se anuncie en las redes sociales) ó de forma individual, así
+                que, si te interesa hacerlo, nos ponemos de acuerdo en un día y una hora que ambos podamos.
+                <br>
+                <br>
+                El taller dura aproximadamente dos horas en las cuales se enseña toda la teoría y la técnica necesaria para
+                abrir los registros (tanto propios como de terceros), además de las meditaciones y oraciones necesarias.
+            </p>
+        </div>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            -Concepto de akásha y registros akashicos.
-            <br>
-            -Cuerpo mental y voces mentales.
-            <br>
-            -Guardianes de los registros akashicos.
-            <br>
-            -Tipos de preguntas.
-            <br>
-            -Recomendaciones a la hora de realizar la consulta.
-            <br>
-            -Técnicas para desarrollar y potenciar la intuición.
-            <br>
-            -Meditación de preparación y limpieza energética previa a la sesión.
-            <br>
-            -Oraciones de protección, apretura y cierre.
-            <br>
-            -Dinámica de la sesión.
-            <br>
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="pt-2 text-decoration-underline">
+                Los temas que vemos, son los siguientes:
+            </h2>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            La técnica es muy sencilla, no se necesitan niveles, ni saber de ángeles ni maestros ascendidos que NADA
-            tienen que ver con el libro del alma propio y PRIVADO de cada uno; cualquiera puede aprenderla y con mucha
-            práctica, logrará abrirlos y leerlos correctamente.
-            <br>
-            <br>
-            Se entrega un apunte en PDF y un certificado de
-            asistencia al taller; además seguimos en contacto por WhatsApp/Instagram en caso de que te surjan dudas
-            durante la práctica y ejercicio.
-            <br>
-            <br>
-            Si te interesa, ponete en contacto por los medios establecidos, contándome desde donde me escribís, así te
-            facilito más información.
-        </p>
+            <p class="fs-4 px-3 lh-sm texto-justificado">
+                -Concepto de akásha y registros akashicos.
+                <br>
+                -Cuerpo mental y voces mentales.
+                <br>
+                -Guardianes de los registros akashicos.
+                <br>
+                -Tipos de preguntas.
+                <br>
+                -Recomendaciones a la hora de realizar la consulta.
+                <br>
+                -Técnicas para desarrollar y potenciar la intuición.
+                <br>
+                -Meditación de preparación y limpieza energética previa a la sesión.
+                <br>
+                -Oraciones de protección, apretura y cierre.
+                <br>
+                -Dinámica de la sesión.
+                <br>
+            </p>
+        </div>
 
-        <h2 class="pt-4 pb-3 text-decoration-underline">
-            TALLER DE PÉNDULO HEBREO
-        </h2>
+        <div class="card-bg rounded-4 my-3 p-3" data-aos="fade-up" data-aos-duration="1000">
+            <p class="fs-4 px-3 lh-sm texto-justificado">
+                La técnica es muy sencilla, no se necesitan niveles, ni saber de ángeles ni maestros ascendidos que NADA
+                tienen que ver con el libro del alma propio y PRIVADO de cada uno; cualquiera puede aprenderla y con mucha
+                práctica, logrará abrirlos y leerlos correctamente.
+                <br>
+                <br>
+                Se entrega un apunte en PDF y un certificado de
+                asistencia al taller; además seguimos en contacto por WhatsApp/Instagram en caso de que te surjan dudas
+                durante la práctica y ejercicio.
+                <br>
+                <br>
+                Si te interesa, ponete en contacto por los medios establecidos, contándome desde donde me escribís, así te
+                facilito más información.
+            </p>
+        </div>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            El péndulo hebreo es una herramienta terapéutica milenaria de limpieza, sanación y regeneración energética
-            gracias a su forma y la vibración de las letras hebreas de las etiquetas.
-            <br>
-            <br>
-            Con el uso correcto del péndulo podemos tratar cuestiones emocionales, físicas y energéticas de las
-            personas, así como también de nuestras mascotas. NO reemplaza a la medicina tradicional ni a la psicología, es un complemento.
-            <br>
-            <br>
-            El taller es online grupal (cuando lo anuncie en las redes) ó de forma individual coordinando un día y
-            horario con el interesado.
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="pendulo-hebreo">
+            <h2 class="text-decoration-underline">
+                TALLER DE PÉNDULO HEBREO
+            </h2>
 
-        <h2 class="pt-2 text-decoration-underline">
-            Los temas que vemos, son los siguientes:
-        </h2>
+            <p class="fs-4 p-3 lh-sm texto-justificado">
+                El péndulo hebreo es una herramienta terapéutica milenaria de limpieza, sanación y regeneración energética
+                gracias a su forma y la vibración de las letras hebreas de las etiquetas.
+                <br>
+                <br>
+                Con el uso correcto del péndulo podemos tratar cuestiones emocionales, físicas y energéticas de las
+                personas, así como también de nuestras mascotas. NO reemplaza a la medicina tradicional ni a la psicología, es un complemento.
+                <br>
+                <br>
+                El taller es online grupal (cuando lo anuncie en las redes) ó de forma individual coordinando un día y
+                horario con el interesado.
+            </p>
+        </div>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            -Concepto e historia breve del péndulo hebreo.
-            <br>
-            -Anatomía energética (chakras y capas áuricas)
-            <br>
-            -Protección previa la sesión.
-            <br>
-            -Dinámica de la sesión: Testeo y aplicación energética por medio de las etiquetas con letras.
-            <br>
-            <br>
-            Se entrega un apunte en PDF, un certificado y la grabación del taller.
-            <br>
-            Si te interesa, ponete en contacto por los medios establecidos y te facilito más información.
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="pt-2 text-decoration-underline">
+                Los temas que vemos, son los siguientes:
+            </h2>
 
-        <h2 class="pt-4 pb-3 text-decoration-underline">
-            FORMACIÓN EN ASTROLOGíA (primer nivel)
-        </h2>
+            <p class="fs-4 px-3 lh-sm texto-justificado">
+                -Concepto e historia breve del péndulo hebreo.
+                <br>
+                -Anatomía energética (chakras y capas áuricas)
+                <br>
+                -Protección previa la sesión.
+                <br>
+                -Dinámica de la sesión: Testeo y aplicación energética por medio de las etiquetas con letras.
+                <br>
+                <br>
+                Se entrega un apunte en PDF, un certificado y la grabación del taller.
+                <br>
+                Si te interesa, ponete en contacto por los medios establecidos y te facilito más información.
+            </p>
+        </div>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Las clases comienzan el 29 de marzo, a las 12 del mediodía (hora argentina). Se cursan todos los sábados de cada mes, con una hora y media de duración cada clase.
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="formacion-astrologia">
+            <h2 class="text-decoration-underline">
+                FORMACIÓN EN ASTROLOGíA (primer nivel)
+            </h2>
 
-        <h2 class="pt-2 text-decoration-underline">
-            Los meses de cursado son:
-        </h2>
+            <p class="fs-4 p-3 lh-sm texto-justificado">
+                Las clases comienzan el 29 de marzo, a las 12 del mediodía (hora argentina). Se cursan todos los sábados de cada mes, con una hora y media de duración cada clase.
+            </p>
+        </div>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            *Abril.
-            <br>
-            *Mayo.
-            <br>
-            *Junio.
-            <br>
-            *Agosto.
-            <br>
-            <br>
-            *Septiembre.
-            <br>
-            *Octubre.
-            <br>
-            *Noviembre.
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="pt-2 text-decoration-underline">
+                Los meses de cursado son:
+            </h2>
 
-        <h2 class="pt-2 text-decoration-underline">
-            El plan de estudio es el siguiente:
-        </h2>
+            <p class="fs-4 px-3 lh-sm text-center">
+                *Abril.
+                <br>
+                *Mayo.
+                <br>
+                *Junio.
+                <br>
+                *Agosto.
+                <br>
+                <br>
+                *Septiembre.
+                <br>
+                *Octubre.
+                <br>
+                *Noviembre.
+            </p>
+        </div>
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            *Historia de la Astrología.
-            <br>
-            *Mandala Astrológico.
-            <br>
-            -Cuadrantes.
-            <br>
-            -Hemisferios.
-            <br>
-            -Ejes.
-            <br>
-            -Casas Astrologicas.
-            <br>
-            -Casas derivadas.
-            <br>
-            -Cuspides.
-            <br>
-            <br>
-            *Signos:
-            <br>
-            -Astrología y mitología.
-            <br>
-            -Triplicidades astrológicas.
-            <br>
-            -Modalidades.
-            <br>
-            -Polaridades.
-            <br>
-            -Sectas.
-            <br>
-            -Retrógrados.
-            <br>
-            -Regentes.
-            <br>
-            <br>
-            *Planetas:
-            <br>
-            -Astrología y mitología.
-            <br>
-            -Personales.
-            <br>
-            -Sociales.
-            <br>
-            -Transpersonales.
-        </p>
+        <div class="card-bg rounded-4 my-3 p-3" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="pt-2 text-decoration-underline">
+                El plan de estudio es el siguiente:
+            </h2>
 
-        <p class="fs-3">
-            ✅Las clases son tórico-prácticas y vivenciales. Se entregan grabadas (Google Meet) en caso de que no puedan asistir y al finalizar el nivel se otorga un certificado.
-            <br>
-            Para más información ponerse en contacto por los medios indicados.
-        </p>
+            <p class="fs-4 px-3 lh-sm text-center">
+                *Historia de la Astrología.
+                <br>
+                *Mandala Astrológico.
+                <br>
+                -Cuadrantes.
+                <br>
+                -Hemisferios.
+                <br>
+                -Ejes.
+                <br>
+                -Casas Astrologicas.
+                <br>
+                -Casas derivadas.
+                <br>
+                -Cuspides.
+                <br>
+                <br>
+                *Signos:
+                <br>
+                -Astrología y mitología.
+                <br>
+                -Triplicidades astrológicas.
+                <br>
+                -Modalidades.
+                <br>
+                -Polaridades.
+                <br>
+                -Sectas.
+                <br>
+                -Retrógrados.
+                <br>
+                -Regentes.
+                <br>
+                <br>
+                *Planetas:
+                <br>
+                -Astrología y mitología.
+                <br>
+                -Personales.
+                <br>
+                -Sociales.
+                <br>
+                -Transpersonales.
+            </p>
+        </div>
+
+        <div class="card-bg rounded-4 my-3 p-3" data-aos="fade-up" data-aos-duration="1000">
+            <p class="fs-3 texto-justificado">
+                ✅Las clases son tórico-prácticas y vivenciales. Se entregan grabadas (Google Meet) en caso de que no puedan asistir y al finalizar el nivel se otorga un certificado.
+                <br>
+                Para más información ponerse en contacto por los medios indicados.
+            </p>
+        </div>
 
     </section>
 
-    <!-- Footer -->
-    <Footer class="seccion-clara align-items-center justify-content-center">
-        <div class="derechos-de-autor text-center">Espacio Luminem (2024) &#169;</div>
+    <nav class="navbar fixed-bottom navbar-light bg-light d-md-none">
+        <div class="container-fluid d-flex justify-content-around">
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="../../index.html">
+                <i class="bi bi-house-door-fill fs-4"></i>
+                <small>Inicio</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="./sobremi.html">
+                <i class="bi bi-person-circle fs-4"></i>
+                <small>Sobre mí</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="../../index.html#servicios">
+                <i class="bi bi-gem fs-4"></i>
+                <small>Servicios</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="../../index.html#contenido-gratuito">
+                <i class="bi bi-book fs-4"></i>
+                <small>Contenido</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0"
+                href="./talleres.html">
+                <i class="bi bi-mortarboard-fill fs-4"></i>
+                <small>Talleres</small>
+            </a>
+            <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="../../index.html#contacto">
+                <i class="bi bi-telephone-fill fs-4"></i>
+                <small>Contacto</small>
+            </a>
+        </div>
+    </nav>
+
+
+    <Footer class="text-bg-light align-items-center justify-content-center pt-3 pb-2 d-none d-md-flex">
+        <div class="derechos-de-autor text-center fw-medium">Espacio Luminem (2024) © | Desarrollado por <a
+                href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer" id="pablomgdev">Pablo
+                MG.</a> </div>
     </Footer>
 
+    <Footer class="align-items-center justify-content-center pt-3 pb-2 d-md-none">
+        <div class="derechos-de-autor text-center fw-medium mt-5">Espacio Luminem (2024) © | Desarrollado por <a
+                href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer" id="pablomgdev">Pablo
+                MG.</a> </div>
+    </Footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/aos-init.js"></script>
+    <script src="../js/scroll-to-top.js"></script>
 </body>
 
 </html>

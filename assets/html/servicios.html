@@ -21,284 +21,447 @@
         rel="stylesheet">
     <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Animate On Scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
-    <!-- Header -->
-    <header>
+<body class="fondo">
 
-        <nav class="navbar navbar-expand-md">
+    <button onclick="topFunction()" id="btn-ir-arriba" title="Ir arriba" style="display: none;"><i class="bi bi-arrow-up-circle-fill"></i></button>
 
-            <div class="container-fluid">
+        <!-- Header -->
+        <header class="text-bg-light d-none d-md-block">
 
-                <a class="navbar-brand" href="../../index.html">
-                    <img src="../imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top">
-                </a>
+            <nav class="navbar navbar-expand-md">
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="container-fluid px-5">
 
-                <div class="collapse navbar-collapse" id="navbar-toggler">
+                    <a class="navbar-brand" href="../../index.html">
+                        <img src="../imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top"
+                            style="width: 8rem; border-radius: 1rem;">
+                    </a>
 
-                    <ul class="navbar-nav d-flex justify-content-center align-items-center text-center">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="../html/sobremi.html">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="#servicios">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="../../index.html#contenido-gratuito">Contenido gratuito</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="../html/talleres.html">Talleres y
-                                cursos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bolder fs-3" href="../../index.html#contacto">Contacto</a>
-                        </li>
-                    </ul>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbar-toggler">
+
+                        <ul class="navbar-nav d-flex justify-content-center align-items-center text-center">
+                            <li class="nav-item">
+                                <a class="nav-link fw-bolder fs-5" href="./sobremi.html">Sobre mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bolder fs-5" href="../../index.html#servicios">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bolder fs-5" href="../../index.html#contenido-gratuito">Contenido
+                                    gratuito</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bolder fs-5" href="./talleres.html">Talleres y
+                                    cursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-bolder fs-5" href="../../index.html#contacto">Contacto</a>
+                            </li>
+                        </ul>
+
+                    </div>
 
                 </div>
 
+            </nav>
+
+        </header>
+
+        <header class="text-bg-light py-2 d-md-none">
+            <div class="container-fluid text-center">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="../imgs/img1.jpg" alt="logo espacio luminem" class="d-inline-block align-text-top"
+                        style="width: 8rem; border-radius: 1rem;">
+                </a>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <section class="text-center text-light w-75 mx-auto mt-3">
+
+            <div class="card-bg rounded-4 p-3" data-aos="fade-up" data-aos-duration="1000" id="carta-natal">
+                <h2 class="text-decoration-underline">
+                    Descubrí tu Potencial con la Astrología y Terapias Holísticas
+                </h2>
+
+                <p class="fs-4 p-3 lh-sm texto-justificado">
+                    ¿Sentís que hay algo más esperando ser descubierto en tu vida? Mis servicios de astrología y terapias
+                    holísticas te ofrecen un camino único para el autoconocimiento, la sanación y el despliegue de todo tu
+                    potencial.
+                    <br>
+                    Te invito a explorar estas herramientas transformadoras que te guiarán hacia una vida más
+                    plena y consciente.
+                </p>
             </div>
 
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-decoration-underline">
+                Carta Natal: El Mapa de tu Alma
+            </h2>
+
+            <p class="fs-4 p-3 lh-sm texto-justificado">
+                Tu <strong>Carta Natal</strong> es mucho más que un simple horóscopo; es una <strong>fotografía
+                    celestial</strong> del momento exacto de
+                tu nacimiento.
+                Este mapa único revela tus <strong>tendencias energéticas</strong> en cada aspecto de tu vida: desde tu
+                personalidad y
+                tus desafíos, hasta tus talentos ocultos, tus relaciones y tu propósito de vida.
+                <br>
+                <br>
+                Mis lecturas de Carta Natal están diseñadas para que te <strong>conozcas en profundidad</strong> ,
+                descubras todo tu
+                <strong>potencial</strong> y aprendas a transformar aquello que te impide alcanzar la plenitud. Es una
+                herramienta
+                poderosa para entender por qué sos como sos y cómo podés ser aún mejor.
+            </p>
+        </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="revolucion-solar">
+                <h2 class="text-decoration-underline">
+                    Revolución Solar: Tu Nuevo Año Astrológico Personal
+                </h2>
+
+                <p class="fs-4 p-3 lh-sm texto-justificado">
+                    Cada vez que cumplís años, entrás en un <strong>nuevo ciclo energético</strong>. La <strong>Revolución
+                        Solar</strong> es la guía para ese
+                    período, revelando las <strong>tendencias, tesoros y desafíos</strong> que te esperan en los próximos 12
+                    meses.
+                    <br>
+                    <br>
+                    Analizaremos en detalle cómo viene tu año en áreas clave como el amor, el trabajo, las finanzas,
+                    proyectos, familia viajes y la salud. Te daré las <strong>fechas clave</strong> para aprovechar al
+                    máximo las
+                    oportunidades y cuándo ser más precavido. ¡Prepárate para recibir tu nuevo año astrológico con claridad
+                    y dirección!
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="sinastria">
+                <h2 class="p-3 text-decoration-underline">
+                    Sinastría de Pareja: La Danza de Dos Almas
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    ¿Te gustaría entender la <strong>dinámica profunda</strong> de tus relaciones? La <strong>Sinastría de
+                        Pareja</strong> es la clave. Ya sea
+                    con tu pareja, un familiar, un socio o un amigo, analizaremos la interacción entre sus Cartas Natales
+                    para identificar los <strong>puntos fuertes del vínculo</strong> y aquellas áreas donde necesitan mayor
+                    comprensión y
+                    cuidado.
+                    <br>
+                    <br>
+                    Descubrí cómo se potencian mutuamente y qué <strong>matices kármicos</strong> están presentes en la
+                    relación. Con esta
+                    lectura, obtendrás un <strong>conocimiento profundo y completo</strong> que te permitirá fortalecer el
+                    amor y la
+                    conexión.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="astrologia-electiva">
+                <h2 class="p-3 text-decoration-underline">
+                    Astrología Electiva: Elegí el Momento Perfecto
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    ¿Hay un evento importante en tu vida que querés que sea un éxito? La <strong>Astrología
+                        Electiva</strong> te permite
+                    elegir el <strong>momento astrológico óptimo</strong> para cualquier acontecimiento: una boda, una
+                    cirugía, la firma de
+                    un contrato, una inversión o incluso una charla de reconciliación.
+                    <br>
+                    <br>
+                    Toma decisiones estratégicas y asegúrate de que la energía cósmica esté a tu favor para lograr los
+                    mejores resultados.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="carta-draconica">
+                <h2 class="p-3 text-decoration-underline">
+                    Carta Dracónica: La Voz de tu Alma Profunda
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    Más allá de lo que percibimos, nuestra alma habita en <strong>otros planos de consciencia</strong>. La
+                    <strong>Carta Dracónica</strong>,
+                    también conocida como la "Carta del Alma", revela tu <strong>capa más profunda</strong> y lo que tu alma
+                    vino a aprender
+                    y desarrollar en esta encarnación.
+                    <br>
+                    <br>
+                    Al contrastarla con tu Carta Natal, esta lectura te ofrece una <strong>mayor toma de
+                        consciencia</strong> sobre las
+                    partes de tu alma que se manifiestan en distintos escenarios de tu vida, facilitando <strong>desbloqueos
+                        internos</strong>
+                    y un camino hacia la plenitud.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="carta-astrogenealogica">
+                <h2 class="p-3 text-decoration-underline">
+                    Carta Astrogenealógica: Desentrañando tus Raíces
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    ¿Creés que arrastrás patrones familiares o que ciertos bloqueos se repiten en tu linaje? La <strong>Carta
+                        Astrogenealógica</strong> es un análisis fascinante que explora la conexión profunda con tu alma familiar.
+                    <br>
+                    <br>
+                    Descubrí el <strong>origen astrológico de bloqueos y síntomas</strong> que te quitan plenitud, y a la vez, identifícate
+                    con los <strong>tesoros y dones</strong> que te enriquecen de tus ancestros. Es un viaje revelador que te permitirá
+                    comprender y sanar tus raíces.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="astrologia-empresarial">
+                <h2 class="p-3 text-decoration-underline">
+                    Astrología Empresarial: El Éxito de tu Negocio en las Estrellas
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    Así como las personas, las empresas también tienen su propio <strong>mapa natal</strong> desde su fecha de fundación. La
+                    <strong>Carta Empresarial</strong> te ofrece un análisis profundo para <strong>detectar grandes oportunidades y fortalezas</strong>
+                    en todas las áreas de tu negocio.
+                    <br>
+                    <br>
+                    Tomá decisiones estratégicas acertadas: desde la firma de contratos y la contratación de personal, hasta
+                    la expansión y la inversión. Esta herramienta, utilizada en secreto por gobiernos y multinacionales,
+                    ahora está a tu alcance para impulsar el <strong>crecimiento y la mejora</strong> de tu empresa.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="constelaciones-familiares">
+                <h2 class="p-3 text-decoration-underline">
+                    Constelaciones Familiares Individuales: Sanando el Sistema
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    Las <strong>Constelaciones Familiares Individuales</strong> son una poderosa técnica terapéutica que te permite encontrar
+                    el <strong>origen de conflictos o síntomas</strong> (físicos o existenciales) que te afectan. A través de un campo
+                    energético, se revela la información necesaria para <strong>integrar y ordenar</strong> aquello que te bloquea, abriendo
+                    el camino hacia la sanación.
+                    <br>
+                    <br>
+                    Es un complemento invaluable para la medicina y la psicoterapia, brindando una perspectiva sistémica
+                    única. Las sesiones se realizan por videollamada, adaptándose a tu ritmo y necesidad.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="registros-akashicos">
+            <h2 class="p-3 text-decoration-underline">
+                Registros Akáshicos: La Sabiduría de tu Alma
+            </h2>
+
+            <p class="fs-4 px-3 lh-sm texto-justificado">
+                Los <strong>Registros Akáshicos</strong> son la <strong>biografía universal de tu alma</strong>, un archivo que guarda toda la información
+                de tus experiencias pasadas y presentes. En estas sesiones, abrimos de forma segura este registro para
+                que accedas a la <strong>claridad, sanación y desbloqueo</strong> que necesitas en tu vida.
+                <br>
+                <br>
+                Venís con tus preguntas preparadas y te irás con una profunda sensación de paz y liviandad, ya que no
+                solo recibirás información, sino también una <strong>energía de alta vibración</strong> que te transformará.
+            </p>
+        </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="terapia-pendulo">
+                <h2 class="p-3 text-decoration-underline">
+                    Terapia con Péndulo: Limpieza y Regeneración Energética
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    Renová tu energía y liberá bloqueos con la <strong>Terapia con Péndulo</strong>. Combinando la radiestesia con el péndulo
+                    hebreo, esta terapia logra una <strong>limpieza y regeneración energéticas profundas</strong>.
+                    <br>
+                    <br>
+                    A través de un testeo inicial, determinaremos tu nivel de polución energética y daño en tus capas
+                    áuricas, para luego brindarte un tratamiento personalizado que te devolverá el equilibrio y la
+                    vitalidad.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="lectura-lilith">
+                <h2 class="p-3 text-decoration-underline">
+                    Lectura de Lilith: Abrazando tu Poder Oculto
+                </h2>
+
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    <strong>Lilith</strong> representa uno de los puntos más misteriosos y poderosos de tu carta, a menudo asociado con lo
+                    desconocido y lo reprimido. Esta lectura te invita a explorar esta energía para <strong>desplegar todo el potencial</strong> y el poder que llevas dentro.
+                    <br>
+                    <br>
+                    Analizaremos la posición de Lilith en tu mapa natal para darte un conocimiento amplio y enriquecedor que
+                    te permitirá sanar, integrar y permitirte ser quien realmente sos, aprovechando esos <strong>potenciales ocultos</strong>
+                    para una vida más completa y consciente. Incluye una meditación guiada diseñada especialmente para vos.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="lectura-quiron">
+                <h2 class="p-3 text-decoration-underline">Lectura de Quirón: Sanando tu Herida más Profunda
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    <strong>Quirón</strong> simboliza esa herida incómoda que, al ser comprendida y transitada, nos hace más humanos y nos
+                    eleva espiritualmente. Aunque la tendencia es huir del dolor, Quirón, al igual que Lilith, esconde un
+                    área donde residen tus <strong>grandes talentos y potencialidades</strong>.
+                    <br>
+                    <br>
+                    En esta lectura, analizaremos la posición de Quirón en tu carta para que tomes contacto con esa área a
+                    trabajar, descubriendo los dones que emergen cuando aprendes a fluir con el dolor.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="lectura-natal-full">
+                <h2 class="p-3 text-decoration-underline">
+                    Lectura de Carta Natal Full: Profundizando en tu Ser
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    Si ya tuviste una lectura de Carta Natal profesional y deseas ir más allá, la Lectura de <strong>Carta Natal Full</strong>
+                    es para vos. Con una duración de dos horas y media, esta lectura intensiva te permite <strong>profundizar
+                    aún más</strong> en tu mapa astral.
+                    <br>
+                    <br>
+                    Nos enfocaremos en los aspectos planetarios y la leeremos en conjunto con tu carta progresada. Una
+                    experiencia extensa e intensa que culmina con una meditación guiada diseñada para tus energías y
+                    necesidades.
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="bioneuroreprogramacion">
+                <h2 class="p-3 text-decoration-underline">
+                    Bioneuroreprogramación (Biodescodificación): Liberá tus Emociones, Saná tu Vida.
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    ¿Sentís que hay un <strong>bloqueo en tu vida</strong> o un síntoma físico que no lográs resolver? La
+                    <strong>Bioneuroreprogramación</strong> es una poderosa llave para destrabar esos nudos emocionales que te impiden
+                    avanzar y vivir plenamente.
+                    <br>
+                    <br>
+                    Esta innovadora terapia te guía hacia el <strong>origen emocional de tus síntomas</strong>, ya sean físicos o
+                    existenciales. A través de técnicas precisas y protocolos personalizados, te ayudamos a <strong>localizar esa
+                    emoción atrapada</strong> que está generando el malestar y a <strong>liberarla</strong> de forma profunda.
+                    <br>
+                    <br>
+                    Imagina despojándote de cargas invisibles que te pesan, permitiendo que tu cuerpo y tu ser encuentren su
+                    <strong>equilibrio natural</strong>. El resultado no es solo una mejora, sino la <strong>sanación de tus síntomas y bloqueos</strong>,
+                    abriendo camino a una vida con mayor bienestar y libertad.
+                    <br>
+                    <br>
+                    <strong>¡Es tiempo de entender el mensaje de tu cuerpo y transformar tu realidad!</strong>
+                </p>
+            </div>
+
+            <div class="card-bg rounded-4 my-3 p-3 ancla-seccion" data-aos="fade-up" data-aos-duration="1000" id="lectura-carta-natal-premium">
+                <h2 class="p-3 text-decoration-underline">
+                    Lectura de Carta Natal Premium: El Viaje Más Profundo Hacia Vos Mismo/a.
+                </h2>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    ¿Lista para una inmersión total en el mapa estelar de tu alma? La <strong>Lectura de Carta Natal Premium</strong> es la
+                    experiencia astrológica más <strong>extensa y reveladora</strong> que ofrezco, diseñada para quienes buscan comprender
+                    cada matiz de su ser y de su destino.
+                    <br>
+                    <br>
+                    En este viaje de casi <strong>cuatro horas</strong>, desentrañaremos juntas el mensaje completo de tu Carta Natal. No nos
+                    quedaremos en la superficie; iremos más allá, explorando:
+                </p>
+
+                <ul class="fs-4 texto-justificado p-2">
+                    <li class="p-2"><strong>Los pilares de tu ser:</strong> Analizaremos tus elementos, modalidades y cuadrantes para
+                        entender tu esencia
+                        fundamental.</li>
+                    <li class="p-2"><strong>Un recorrido casa por casa:</strong> Leeremos tu carta en sentido antihorario, explorando cada
+                        área de tu
+                        vida: desde tus talentos ocultos y desafíos hasta tus relaciones, finanzas y propósito. Veremos qué
+                        signos abren y cierran cada casa, la influencia de los planetas, sus aspectos y grados astrológicos.
+                    </li>
+                    <li class="p-2"><strong>Tu estado psicológico actual:</strong> Fusionaremos tu Carta Natal con tu <strong>Carta Progresada</strong>, una
+                        herramienta
+                        clave que revela tu evolución psicológica y los cambios internos que estás experimentando. Esto te
+                        dará una claridad asombrosa sobre tu momento presente.</li>
+                    <li class="p-2"><strong>Tu regente cósmico:</strong> Calcularemos tu <strong>Almuten Figuris</strong>, el planeta gobernador de tu carta,
+                        para
+                        descubrir la energía más influyente en tu vida.</li>
+                    <li><strong>El pulso del universo:</strong> Finalizaremos con una <strong>lectura de tránsitos</strong>, mostrando cómo las energías
+                        planetarias actuales están interactuando con tu carta, brindándote una hoja de ruta para el presente
+                        y el futuro cercano.</li>
+                </ul>
+
+                <p class="fs-4 px-3 lh-sm texto-justificado">
+                    Para coronar esta experiencia transformadora, recibirás una <strong>meditación guiada exclusiva</strong>, diseñada
+                    <strong>únicamente para vos</strong> y las energías de tu carta. Es un cierre poderoso que integra todo lo descubierto y
+                    potencia tu conexión con tu sabiduría interior.
+                    <br>
+                    <br>
+                    Además, te entregaré la <strong>grabación completa de la sesión</strong> para que puedas revisarla cuantas veces quieras
+                    y seguir profundizando en este autoconocimiento.
+                    <br>
+                    <br>
+                    Si estás lista para la inmersión más completa en tu universo interior y desbloquear un nivel de
+                    autocomprensión sin precedentes, esta es tu oportunidad.
+                    <br>
+                    <br>
+                    <strong>¿Estás listo para iniciar este viaje de autodescubrimiento y transformación?</strong> Te invito a contactarme
+                    para reservar tu sesión y comenzar a desvelar los secretos de tu propio universo.
+                </p>
+            </div>
+
+        </section>
+
+        <nav class="navbar fixed-bottom navbar-light bg-light d-md-none">
+            <div class="container-fluid d-flex justify-content-around">
+                <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="../../index.html">
+                    <i class="bi bi-house-door-fill fs-4"></i>
+                    <small>Inicio</small>
+                </a>
+                <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="./sobremi.html">
+                    <i class="bi bi-person-circle fs-4"></i>
+                    <small>Sobre mí</small>
+                </a>
+                <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="../../index.html#servicios">
+                    <i class="bi bi-gem fs-4"></i>
+                    <small>Servicios</small>
+                </a>
+                <a class="nav-link text-center d-flex flex-column align-items-center p-0"
+                    href="../../index.html#contenido-gratuito">
+                    <i class="bi bi-book fs-4"></i>
+                    <small>Contenido</small>
+                </a>
+                <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="./talleres.html">
+                    <i class="bi bi-mortarboard-fill fs-4"></i>
+                    <small>Talleres</small>
+                </a>
+                <a class="nav-link text-center d-flex flex-column align-items-center p-0" href="../../index.html#contacto">
+                    <i class="bi bi-telephone-fill fs-4"></i>
+                    <small>Contacto</small>
+                </a>
+            </div>
         </nav>
 
-    </header>
 
-    <!-- Content -->
-    <section class="seccion-oscura text-center">
+        <Footer class="text-bg-light align-items-center justify-content-center pt-3 pb-2 d-none d-md-flex">
+            <div class="derechos-de-autor text-center fw-medium">Espacio Luminem (2024) © | Desarrollado por <a
+                    href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer" id="pablomgdev">Pablo
+                    MG.</a> </div>
+        </Footer>
 
-        <h2 class="pt-4 text-decoration-underline">
-            Carta Natal
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Es el mapa del alma en esta encarnación, es una foto de como estaba el cielo al momento de nuestro
-            nacimiento, lo cual nos va a mostrar las tendencias energéticas en cada escenario de nuestra vida:
-            <br>
-            <br>
-            Nacimiento, infancia, cuerpo físico, desafíos, aprendizajes, carácter, personalidad, dinero, valores,
-            comunicación, hermanos, familia, hogar, emociones, proyectos, romances, salud, trabajo, matrimonio/parejas,
-            herencias, sexualidad, miedos, filosofía, viajes, éxito, profesión, vocación, amigos, karma, espiritualidad,
-            etc.
-            <br>
-            <br>
-            El enfoque que le doy a mis lecturas de carta natal, va orientado a que la persona se conozca y
-            descubra todo el potencial, así como también vea de que manera puede trabajar todo aquello que le quite
-            plenitud.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Revolución Solar
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Al momento de cumplir años se genera un reseteo energético y entramos en un nuevo año astrológico personal,
-            la revolución solar nos va a mostrar como viene ese año y cuáles van a ser las tendencias, los tesoros y los
-            desafíos en cada área de nuestra vida durante ese año: Aprendizajes, dinero, comunicación, familia,
-            proyectos, hijos, salud, trabajo, matrimonio/pareja, prestamos, herencias viajes, estudios, éxito, amigos,
-            karmas, imagen ante la sociedad, etc.
-            <br>
-            <br>
-            La lectura de la revolución solar se divide en 12 periodos de 30 días
-            aprox. Cada uno en los cuales vamos analizando como viene el año, que fechas a provechar y con que fechas
-            ser precavidos, en las respectivas áreas de vida.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Sinastría de Pareja
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Se utiliza para analizar un vinculo (que puede ser parejas, padres/hijos, socios, amigos, etc.) a través de
-            contrastar sus cartas natales y ver los puntos fuertes del vínculo, que aspectos de la vida de cada uno se
-            potencian al interactuar con el otro y en que aspectos ser más cuidadosos, ya que todos tenemos heridas que
-            pueden ser tocadas por X aspectos de la vida del otro y viceversa.
-            <br>
-            <br>
-            Además, podemos observar que matices
-            kármicos tiene dicho vínculo y como liberarlos.
-            En fin, con la sinastría vemos como interactúan todos los aspectos de la vida de un individuo con todos los
-            aspectos de la vida del otro, con el fin de mejorar la relación obteniendo un conocimiento profundo y
-            completo de la misma.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Astrología Electiva
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Se utiliza para elegir el mejor momento para un acontecimiento, que puede ser: Un casamiento, una cirugía,
-            una firma de contrato, una inversión, una charla de reconciliación, o la decisión que sea en cualquier
-            aspecto de nuestras vidas.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Carta Dracónica
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Nos habla de nuestra capa más profunda, de lo que nuestra alma ha venido a aprender y desarrollar en esta
-            vida. También se la conoce como “Carta del alma”. Como muchos saben no somos solo nuestro cuerpo físico,
-            sino que tenemos cuerpos sutiles y habitamos en otros plenos con distintos estados de consciencia.
-            <br>
-            <br>
-            Mientras
-            que la carta tropical (carta natal) nos muestra todo sobre nosotros en esta vida, encarnados en el planeta
-            tierra, la carta dracónica nos habla de esas partes nuestras que habitan en otro espacio - tiempo. Se lee
-            contrastada con la carta natal para ver que partes o aspectos de nuestra alma encarnan en distintos
-            escenarios en esta encarnación, aumentando la toma de consciencia y, por ende; generando procesos de
-            desbloqueos internos.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Carta Astrogenealógica
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Es un análisis profundo, fascinante y revelador de la conexión que tenemos con el alma familiar ¿Qué quiero
-            decir con esto? Que a través de una lectura astrogenealógica vamos a ver las conexiones de los distintos
-            aspectos de nuestras vidas con situación, circunstancias, hechos y personajes de nuestra genealogía ¿Con qué
-            fin? Con el de conocer el origen de bloqueos y síntomas que me quitan plenitud a todo nivel; así como
-            también poder aprovechar y tomar los tesoros y todo aquello que me enriquece de mis ancestros.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Astrología Empresarial
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Así como cada persona tiene su mapa natal, también lo tienen las empresas, a partir de su fecha de
-            fundación. Este tipo de astrología se enfoca en un análisis profundo de una empresa, pyme, organización,
-            etc. Con el fin de detectar grandes oportunidades y fortalezas en las distintas áreas, con el fin de tomar
-            decisiones acertadas, ya sea firmar contratos, contratar, invertir, expandirse, asociarse, etc.
-            <br>
-            <br>
-            Es una
-            herramienta que los gobiernos y las grandes multinacionales siempre utilizaron en secreto y que ahora se
-            encuentra al alcance de todos para que puedas tomar decisiones organizacionales, empresariales, logísticas,
-            contractuales, comunicacionales y financieras, etc. de manera acertada para lograr mejoras y crecimiento.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Constelaciones Familiares Individuales
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Las constelaciones familiares son una técnica terapéutica creada por el alemán Bert Hellinger (filosofo,
-            teólogo y espiritualista). Él combinó conocimientos adquiridos al convivir, durante una de sus misiones, con
-            el pueblo zulú; con otras diversas técnicas terapéuticas y de sanación.
-            <br>
-            <br>
-            Las constelaciones permiten encontrar el origen de un conflicto o síntoma (ya sea físico o existencial) y al
-            constelarlo, el campo mórfico (escenario) nos muestra toda la información que hay que integrar y ordenar
-            para liberar ese bloqueo/síntoma, además de mostrarnos el camino hacia la sanación.
-            <br>
-            <br>
-            No es un reemplazo a la medicina tradicional ni a la psicoterapia, es más bien un complemento desde lo
-            sistémico.
-            Las sesiones se hacen por videollamada y la duración va a depender de cada caso (que es único), pero puede
-            ser entre 40 min o 2 horas (aproximadamente).
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Registros Akashicos
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Los registros akashicos son la biografía del alma, son ese registro universal que guarda toda la información
-            sobre lo vivido y experimentado (tanto en esta vida como en las anteriores). En la sesión lo que hacemos es
-            abrirlos de manera segura para poder acceder a la información y energía que la persona necesite en ese
-            momento para tener más claridad, sanación y desbloqueo; sobre ella y sobre diversos aspectos de su vida.
-            <br>
-            <br>
-            El
-            consultante debe venir con preguntas ya armadas sobre a aquello que quiere clarificar, saber, sanar, etc.
-            Luego de la sesión la persona termina con mucha paz, liviandad y soltura, ya que no es solo información lo
-            que recibe, sino que la misma viene cargada de una energía de alta vibración.
-            La sesión dura una hora y cuarto y se pueden hacer hasta 7 preguntas.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Terapia con péndulo
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Combina radiestesia con péndulo hebreo para así lograr una limpieza y regeneración energéticas profundas. Lo
-            primero es hacer un testeo del consultante con una selfie, su nombre y su permiso, para obtener un
-            porcentaje de polución energética y daño en las capas áuricas; en base a eso el péndulo otorga determinado
-            tiempo de tratamiento, ya que cada caso es diferente.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Lectura de Lilith
-        </h2>
+        <Footer class="align-items-center justify-content-center pt-3 pb-2 d-md-none">
+            <div class="derechos-de-autor text-center fw-medium mt-5">Espacio Luminem (2024) © | Desarrollado por <a
+                    href="https://pablomgdev.netlify.app/" target="_blank" rel="noopener noreferrer" id="pablomgdev">Pablo
+                    MG.</a> </div>
+        </Footer>
 
 
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Lilith es unos de los puntos de la carta mas difíciles de trabajar y más oscuros, no oscuro de malo, más
-            bien de desconocido. Es un punto tabú para muchos; que bien trabajado despliega todo el potencial y el poder
-            que la persona tiene reprimido.
-            <br>
-            <br>
-            A través de esta lectura de Lilith, a analizamos el signo, la casa, el regente y los aspectos que hace la
-            misma al resto del mapa natal de la persona, para dar un conocimiento amplio, profundo y enriquecedor de la
-            Lilith de cada nativo, con el fin de que tome consciencia de lo que tiene que sanar e integrar; lo que tiene
-            que permitirse ser y que potenciales tenía ocultos hasta el momento para que los aproveche y se vuelva una
-            persona más completa y consciente.
-            <br>
-            <br>
-            La lectura tiene una duración de una hora y al final hacemos una
-            meditación guiada y diseñada por mí, en base a la interacción de la Lilith de cada persona con el resto de
-            su mapa natal.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">Lectura de Quirón
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Quirón es esa herida incómoda que duele con todo el desgarro del mundo, esa herida que al saber fluir con
-            ella nos vuelve más humanos y al volvernos más humanos, antagónicamente nos elevamos espiritualmente.
-            <br>
-            <br>
-            Si bien la tendencia es a huir y no querer ver ese dolor, pero Quirón al igual que Lilith esconde el área en
-            la cual somos muy buenos y tenemos mucho potencial, pero que no logramos ver, ya que se solapa con dicho
-            dolor.
-            <br>
-            <br>
-            En la lectura de Quirón analizamos este planetoide en su signo, casa, regente y aspectos con el fin de que
-            la persona tome contacto con esa área a trabajar y tome todo el potencial y los dones; si aprendemos afluir
-            con ese dolor.
-        </p>
-
-        <h2 class="pt-3 text-decoration-underline">
-            Lectura de Carta Natal Full
-        </h2>
-
-        <p class="fs-4 px-3 lh-sm texto-justificado">
-            Este tipo de lectura de carta natal dura aproximadamente dos horas y media y va orientado a personas que ya
-            han hecho anteriormente una lectura profesional y quieren profundizar aún más en el conocimiento de su mapa
-            astral. 
-            <br>
-            <br>
-            En esta lectura nos enfocamos en los aspectos planetarios y leemos la carta de manera conjunta con
-            la carta progresada. Es una lectura extensa e intensa.
-            Al final de la sesión hacemos una meditación guiada para el consultante que la diseño, en base a las
-            energías y necesidades de su mapa.
-        </p>
-
-    </section>
-
-    <!-- Footer -->
-    <Footer class="seccion-clara align-items-center justify-content-center">
-        <div class="derechos-de-autor text-center">Espacio Luminem (2024) &#169;</div>
-    </Footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script src="../js/aos-init.js"></script>
+        <script src="../js/scroll-to-top.js"></script>
 </body>
 
 </html>
