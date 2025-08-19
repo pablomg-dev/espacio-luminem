@@ -1,12 +1,3 @@
-/* Centrado específico para cards de términos y cookies */
-.card-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 /* Estilos generales */
 
 body {
@@ -21,6 +12,13 @@ body {
 
 .seccion-oscura {
     background-color: #7d0e98;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -134,11 +132,12 @@ header .brand {
 }
 
 .ancla-seccion {
-  scroll-margin-top: 100px;
+    scroll-margin-top: 100px;
 }
 
 #btn-ir-arriba {
-    display: none; /* Oculto por defecto */
+    display: none;
+    /* Oculto por defecto */
     position: fixed;
     bottom: 20px;
     right: 30px;
@@ -170,17 +169,22 @@ header .brand {
     color: #7d0e98 !important;
     text-decoration: underline !important;
 }
+
 .footer-link:visited {
     color: #7d0e98 !important;
     text-decoration: underline !important;
 }
+
 .footer-link:hover {
     color: #7960b3 !important;
     text-decoration: underline !important;
 }
 
 /* Forzar texto blanco en cards de términos y cookies */
-.card-bg.text-light, .card-bg.text-light *, .card-bg.text-light ul, .card-bg.text-light li {
+.card-bg.text-light,
+.card-bg.text-light *,
+.card-bg.text-light ul,
+.card-bg.text-light li {
     color: #fff !important;
 }
 
