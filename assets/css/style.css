@@ -1,3 +1,12 @@
+/* Centrado específico para cards de términos y cookies */
+.card-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* Estilos generales */
 
 body {
@@ -154,6 +163,25 @@ header .brand {
 #btn-ir-arriba i {
     font-size: 35px;
     margin-top: 5px;
+}
+
+/* Footer links: Términos y Condiciones y Política de Cookies */
+.footer-link {
+    color: #7d0e98 !important;
+    text-decoration: underline !important;
+}
+.footer-link:visited {
+    color: #7d0e98 !important;
+    text-decoration: underline !important;
+}
+.footer-link:hover {
+    color: #7960b3 !important;
+    text-decoration: underline !important;
+}
+
+/* Forzar texto blanco en cards de términos y cookies */
+.card-bg.text-light, .card-bg.text-light *, .card-bg.text-light ul, .card-bg.text-light li {
+    color: #fff !important;
 }
 
 @media (max-width: 767px) {
