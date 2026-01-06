@@ -2,7 +2,8 @@
 
 body {
     font-family: "Cormorant Garamond", serif;
-    background-image: url(/assets/imgs/fondo.png);
+    /* ruta relativa correcta desde assets/css/ hacia assets/imgs/ */
+    background-image: url('../imgs/fondo.png');
     background-attachment: fixed;
 }
 
