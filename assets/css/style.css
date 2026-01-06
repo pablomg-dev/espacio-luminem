@@ -72,10 +72,8 @@ header .brand {
     transition: all 0.2s ease-in;
 }
 
-#contenido-gratuito .card-bg:hover {
-    background-color: white;
-    border: 2px solid #7960b3;
-    color: #7960b3 !important;
+#contenido-gratuito .card-bg:hover a {
+    color: #7d0e98 !important;
 }
 
 
@@ -104,17 +102,8 @@ header .brand {
     transition: all 0.2s ease-in;
 }
 
-.iconos-redes-sociales a:visited i {
-    color: white;
-}
-
-.iconos-redes-sociales a:hover {
-    background-color: white;
-    border: 2px solid #7960b3;
-}
-
 .iconos-redes-sociales a:hover i {
-    color: #7960b3;
+    color: #7d0e98 !important;
 }
 
 .derechos-de-autor {
