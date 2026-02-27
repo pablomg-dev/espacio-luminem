@@ -186,10 +186,15 @@ header .brand {
 }
 
 /* Newsletter Styles */
+.card-bg .newsletter-input,
+.card-bg .newsletter-input:focus,
+.card-bg .newsletter-input::placeholder {
+    color: #7960b3 !important;
+}
+
 .newsletter-input {
     background-color: #f3f2f8;
     border: 2px solid #7960b3;
-    color: #7960b3 !important;
     transition: all 0.2s ease-in;
 }
 
@@ -201,7 +206,6 @@ header .brand {
 }
 
 .newsletter-input::placeholder {
-    color: #7960b3 !important;
     opacity: 0.7;
 }
 
