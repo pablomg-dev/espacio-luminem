@@ -189,7 +189,7 @@ header .brand {
 .newsletter-input {
     background-color: #f3f2f8;
     border: 2px solid #7960b3;
-    color: #7960b3;
+    color: #7960b3 !important;
     transition: all 0.2s ease-in;
 }
 
@@ -197,7 +197,12 @@ header .brand {
     background-color: #fff;
     border-color: #7d0e98;
     box-shadow: 0 0 5px #7d0e98;
-    color: #7d0e98;
+    color: #7d0e98 !important;
+}
+
+.newsletter-input::placeholder {
+    color: #7960b3 !important;
+    opacity: 0.7;
 }
 
 .btn-newsletter {
