@@ -268,6 +268,43 @@
             </div>
         </div>
     </section>
+    <section id="newsletter"
+        class="newsletter seccion-clara text-light rounded-4 my-4 py-4 d-flex flex-column align-items-center justify-content-center w-75 mx-auto"
+        data-aos="fade-up" data-aos-duration="1000">
+
+        <h2 class="fs-1 fw-bold text-center mb-4">Newsletter</h2>
+
+        <div class="container text-center mb-4">
+            <p class="fs-5">Suscribite para recibir información sobre: Sesiones, talleres, cursos, reflexiones,
+                novedades y ¡mucho más!</p>
+        </div>
+
+        <div class="card card-bg text-light w-100" style="max-width: 500px;">
+            <div class="card-body">
+                <form name="newsletter" method="POST" data-netlify="true" autocomplete="off"
+                    class="d-flex flex-column gap-3">
+                    <input type="hidden" name="form-name" value="newsletter">
+
+                    <div class="form-group">
+                        <input type="text" name="nombre" class="form-control newsletter-input" placeholder="Nombre"
+                            required autocomplete="name">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="pais_ciudad" class="form-control newsletter-input"
+                            placeholder="País / Ciudad" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control newsletter-input" placeholder="Email"
+                            required autocomplete="email">
+                    </div>
+
+                    <button type="submit" class="btn btn-newsletter w-100 fw-bold py-2">Suscribirme</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
     <nav class="navbar fixed-bottom navbar-light bg-light d-md-none">
         <div class="container-fluid d-flex justify-content-around">

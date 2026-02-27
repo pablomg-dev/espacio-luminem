@@ -184,3 +184,33 @@ header .brand {
         right: 15px;
     }
 }
+
+/* Newsletter Styles */
+.newsletter-input {
+    background-color: #f3f2f8;
+    border: 2px solid #7960b3;
+    color: #7960b3;
+    transition: all 0.2s ease-in;
+}
+
+.newsletter-input:focus {
+    background-color: #fff;
+    border-color: #7d0e98;
+    box-shadow: 0 0 5px #7d0e98;
+    color: #7d0e98;
+}
+
+.btn-newsletter {
+    background-color: #7d0e98;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px white;
+    transition: all 0.2s ease-in;
+}
+
+.btn-newsletter:hover {
+    background-color: #7960b3;
+    color: #fff;
+    box-shadow: 0 0 10px white;
+    border-color: #fff;
+}
